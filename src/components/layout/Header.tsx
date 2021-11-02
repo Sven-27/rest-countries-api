@@ -1,5 +1,6 @@
 import "styles/layout/Header.scss";
 import { FaRegMoon } from "react-icons/fa";
+import ThemeChanger from "./ThemeChanger";
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       <h1>Where in the world?</h1>
       <div className="header__theme">
         <FaRegMoon />
-        <p>Dark Mode</p>
+        <ThemeChanger />
       </div>
     </header>
   )

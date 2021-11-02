@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+@import "styles/templates/variables";
+@import "styles/templates/queries";
 
 * {
   box-sizing: border-box;
@@ -10,4 +12,12 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background: $bg-lt-gray;
+  color: $txt-dk-blue;
+}
+
+body.dark {
+  height: 100vh;
+  background: $bg-dk-blue;
+  color: $white;
 }
