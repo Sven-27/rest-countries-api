@@ -1,9 +1,12 @@
+@import "styles/templates/variables";
+
 .header {
   display: flex;
   height: 4rem;
   justify-content: space-between;
   align-items: center;
   padding-inline: 3rem;
+  box-shadow: 0 2px 6px 0  $input-dk-gray;
 }
 
 .header__theme {
