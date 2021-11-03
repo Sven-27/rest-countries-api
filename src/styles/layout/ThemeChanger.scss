@@ -1,4 +1,11 @@
 .theme__btn {
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
   cursor: pointer;
+  background: inherit;
+  color: inherit;
+  border: inherit;
+}
+
+.theme__btn:focus {
+  outline: 0;
 }
