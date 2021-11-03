@@ -1,4 +1,4 @@
-import "styles/pages/Details.scss";
+import "styles/pages/details/Details.scss";
 
 const Details = () => {
   return (

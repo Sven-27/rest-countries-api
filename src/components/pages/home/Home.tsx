@@ -1,9 +1,10 @@
-import "styles/pages/Home.scss"
+import "styles/pages/home/Home.scss";
+import Search from "./Search";
 
 const Home = () => {
   return (
     <div className="home">
-      <h1>Home Component</h1>
+      <Search />
     </div>
   )
 }
