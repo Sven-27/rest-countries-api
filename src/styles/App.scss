@@ -2,7 +2,9 @@
 @import "styles/templates/variables";
 @import "styles/templates/queries";
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -22,4 +24,15 @@ body.dark {
   background: $bg-dk-blue;
   color: $white;
   border: $white;
+}
+
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  // Additional resets for further consistency
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
 }

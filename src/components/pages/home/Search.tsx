@@ -4,13 +4,14 @@ import { FaSearch } from "react-icons/fa";
 const Search = () => {
   return (
     <section className="search">
-      <div className="search__country">
-        <div className="search__icon-container">
-          <FaSearch className="search__icon" />
+      <div className="country">
+        <div className="icon-container">
+          <FaSearch className="icon" />
         </div>
         <input type="search" name="countries" id="countries" placeholder="Search for a country..." />
       </div>
-        <select className="search__region" name="region" id="region">
+      <div className="select-container">
+        <select  name="region" id="region">
           <option disabled selected hidden>Filter by Region</option>
           <option value="europe">Europe</option>
           <option value="america">America</option>
@@ -18,6 +19,7 @@ const Search = () => {
           <option value="asia">Asia</option>
           <option value="oceania">Oceania</option>
         </select>      
+      </div>
     </section>
   )
 }
