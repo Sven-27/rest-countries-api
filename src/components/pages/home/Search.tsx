@@ -11,8 +11,8 @@ const Search = () => {
         <input type="search" name="countries" id="countries" placeholder="Search for a country..." />
       </div>
       <div className="select-container">
-        <select  name="region" id="region">
-          <option disabled selected hidden>Filter by Region</option>
+        <select className="chevron" name="region" id="region"> 
+          <option disabled selected hidden>Filter by Region</option> 
           <option value="europe">Europe</option>
           <option value="america">America</option>
           <option value="africa">Africa</option>

@@ -2,13 +2,13 @@
 @import "styles/templates/queries";
 
 .search {
-  height: 10rem;
-  background: red;
+  height: 11rem;
+  // background: red;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-}
+
 
 .country {
   border: 1px solid yellow;
@@ -42,8 +42,11 @@
       outline: none;
     }
   }
+}
 
   .select-container {
-     
+    margin-top: 2rem;
+    width: 100%;
+    // background: green;
   }
 }

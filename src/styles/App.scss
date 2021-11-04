@@ -27,12 +27,15 @@ body.dark {
 }
 
 select {
-  // A reset of styles, including removing the default dropdown arrow
-  appearance: none;
-  // Additional resets for further consistency
+  border-bottom: 1px solid inherit;
   background-color: transparent;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-  outline: none;
+  overflow: hidden;
+  padding: 10px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 60%;
+  outline: 0;
+  color: inherit;
 }
+
+
