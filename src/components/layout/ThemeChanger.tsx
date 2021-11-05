@@ -15,9 +15,14 @@ const ThemeChanger = () => {
     if (themeState) {
       localStorage.setItem('Theme', 'dark');
       document.body.classList.add('dark');
+      document.querySelector("select")?.classList.add("dark");
+      document.querySelector("header")?.classList.add("dark");
+
     } else {
       localStorage.setItem('Theme', 'light');
       document.body.classList.remove('dark');
+      document.querySelector("select")?.classList.remove("dark");
+      document.querySelector("header")?.classList.remove("dark");
     }
   }, [themeState]);
 

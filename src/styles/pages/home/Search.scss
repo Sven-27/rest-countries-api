@@ -48,5 +48,10 @@
     margin-top: 2rem;
     width: 100%;
     // background: green;
+
+    & > option {
+      height: 2rem;;
+    border-bottom: $white;
+  }
   }
 }

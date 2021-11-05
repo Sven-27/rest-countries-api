@@ -8,6 +8,11 @@
   align-items: center;
   padding-inline: 1rem;
   box-shadow: 0 2px 6px 0  $input-dk-gray;
+  background-color: $white;
+
+  &.dark {
+    background-color: $el-dk-blue;
+  }
 
   @include large($desktop){
     padding-inline: 3rem;
