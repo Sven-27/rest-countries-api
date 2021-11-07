@@ -13,11 +13,11 @@ const Search = () => {
       <div className="select-container">
         <select className="dark" name="region" id="region"> 
           <option disabled selected hidden>Filter by Region</option> 
-          <option value="europe">Europe</option>
-          <option value="america">America</option>
-          <option value="africa">Africa</option>
-          <option value="asia">Asia</option>
-          <option value="oceania">Oceania</option>
+          <option  value="europe">Europe</option>
+          <option  value="america">America</option>
+          <option  value="africa">Africa</option>
+          <option  value="asia">Asia</option>
+          <option  value="oceania">Oceania</option>
         </select>      
       </div>
     </section>
