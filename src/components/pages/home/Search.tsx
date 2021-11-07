@@ -1,4 +1,5 @@
 import "styles/pages/home/Search.scss";
+import CustomSelect from "./CustomSelect";
 import { FaSearch } from "react-icons/fa";
 
 const Search = () => {
@@ -10,7 +11,8 @@ const Search = () => {
         </div>
         <input type="search" name="countries" id="countries" placeholder="Search for a country..." />
       </div>
-      <div className="select-container">
+      <CustomSelect />
+      {/* <div className="select-container">
         <select className="dark" name="region" id="region"> 
           <option disabled selected hidden>Filter by Region</option> 
           <option  value="europe">Europe</option>
@@ -19,7 +21,7 @@ const Search = () => {
           <option  value="asia">Asia</option>
           <option  value="oceania">Oceania</option>
         </select>      
-      </div>
+      </div> */}
     </section>
   )
 }
