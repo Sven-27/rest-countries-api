@@ -42,6 +42,10 @@ select {
     background-color: $el-dk-blue;
     border-color: $bg-lt-gray;
   }
+
+  @include mqls($mob-ls) {
+    flex: 1;
+  }
 }
 
 

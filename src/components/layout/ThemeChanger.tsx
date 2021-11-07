@@ -19,6 +19,7 @@ const ThemeChanger = () => {
       document.querySelector("header")?.classList.add("dark");
       document.querySelector(".country")?.classList.add("dark");
       document.querySelector("input")?.classList.add("dark");
+      document.querySelector(".icon")?.classList.add("dark");
 
     } else {
       localStorage.setItem('Theme', 'light');
@@ -27,6 +28,7 @@ const ThemeChanger = () => {
       document.querySelector("header")?.classList.remove("dark");
       document.querySelector(".country")?.classList.remove("dark");
       document.querySelector("input")?.classList.remove("dark");
+      document.querySelector(".icon")?.classList.remove("dark");
     }
   }, [themeState]);
 

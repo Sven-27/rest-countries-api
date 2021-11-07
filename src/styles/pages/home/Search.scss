@@ -31,6 +31,23 @@
     .icon {
       height: 1.5rem;
       width: 1.5rem;
+      color: $txt-dk-blue;
+
+      &.dark {
+        color: $bg-lt-gray;
+      }
+    }
+
+    @include mqpt($tablet) {
+      flex: 0.15;
+    }
+
+    @include mqls($tab-ls) {
+      flex: 0.14;
+    } 
+
+    @include mqls($desktop) {
+      flex: 0.10;
     }
   }
 
@@ -41,6 +58,11 @@
     font-size: 1rem;
     background: transparent;
     border: none;
+    color: $txt-dk-blue;
+
+    &.dark {
+      color: $white;
+    }
 
     &:focus {
       outline: none;
@@ -54,10 +76,28 @@
       color: $bg-lt-gray;
     }
   }
+
+  @include mqls($mob-ls) {
+    flex: 0.6;
+  }
 }
 
   .select-container {
     margin-top: 2rem;
     width: 100%;
+    height: 2.5rem;
+
+    @include mqls($mob-ls) {
+      margin-top: 0;
+      display: flex;
+      flex: 0.3;
+      justify-content: flex-end;
+  }
+  }
+
+  @include mqls($mob-ls) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
