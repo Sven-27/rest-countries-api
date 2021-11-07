@@ -16,18 +16,18 @@ body {
   flex-direction: column;
   background: $bg-lt-gray;
   color: $txt-dk-blue;
-  border: $bg-dk-blue
-}
+  border: $bg-dk-blue;
 
-body.dark {
+  &.dark {
   height: 100vh;
   background: $bg-dk-blue;
   color: $white;
   border: $white;
 }
+}
 
 select {
-  border: 1px solid inherit;
+  border: 1px solid $el-dk-blue;
   border-radius: 5px;
   overflow: hidden;
   padding: 10px 10px;
@@ -38,12 +38,9 @@ select {
   position: relative;
   z-index: 0;
 
-  &::-ms-expand {
-    border-radius: 5px;
-  }
-
   &.dark {
     background-color: $el-dk-blue;
+    border-color: $bg-lt-gray;
   }
 }
 
