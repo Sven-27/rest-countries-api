@@ -20,6 +20,8 @@ const ThemeChanger = () => {
       document.querySelector(".country")?.classList.add("dark");
       document.querySelector("input")?.classList.add("dark");
       document.querySelector(".icon")?.classList.add("dark");
+      document.querySelector(".dropdown-header")?.classList.add("dark");
+      document.querySelector(".dropdown-container")?.classList.add("dark");
 
     } else {
       localStorage.setItem('Theme', 'light');
@@ -29,6 +31,8 @@ const ThemeChanger = () => {
       document.querySelector(".country")?.classList.remove("dark");
       document.querySelector("input")?.classList.remove("dark");
       document.querySelector(".icon")?.classList.remove("dark");
+      document.querySelector(".dropdown-header")?.classList.remove("dark");
+      document.querySelector(".dropdown-container")?.classList.remove("dark");
     }
   }, [themeState]);
 

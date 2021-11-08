@@ -1,12 +1,14 @@
 import { useState } from "react";
 import "styles/pages/home/CustomSelect.scss";
 import { Link } from "react-router-dom";
+import { FaChevronDown } from "react-icons/fa";
 
 const CustomSelect = () => {
   return (
     <div className="customSelect">
       <div className="dropdown-header">
         Filter by Region
+        <FaChevronDown />
       </div>
       <div className="dropdown-container">
         <ul className="dropdown-list">
