@@ -16,13 +16,11 @@ body {
   flex-direction: column;
   background: $bg-lt-gray;
   color: $txt-dk-blue;
-  border: $bg-dk-blue;
 
   &.dark {
   height: 100vh;
   background: $bg-dk-blue;
   color: $white;
-  border: $white;
 }
 }
 
@@ -50,6 +48,7 @@ select {
     max-width: 60%;
   }
 }
+
 
 
 

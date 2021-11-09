@@ -52,22 +52,32 @@
     .dropdown-list {
       padding: 0;
 
-      li {
+      .list {
       display: block;
       list-style-type: none;
-      color: inherit;
       padding: 0.6rem;
-      flex: 1;
 
+      &:not(:last-child) {
+        border-bottom: 1px dotted $el-dk-blue;
+
+      }
+      &.dark {
+        border-bottom: 1px dotted $bg-lt-gray;
+      }
+      
       &:hover {
-          background-color: $el-dk-blue;
-        }
+        background-color: $el-dk-blue;
 
+        &.dark {
+         background-color: $input-dk-gray;
+       }
+      }
+    }
+      
       .list-item {
         text-decoration: none;
         color: inherit;
       }
     }
-    }     
+   }     
   }
-}

@@ -12,11 +12,11 @@ const CustomSelect = () => {
       </div>
       <div className="dropdown-container">
         <ul className="dropdown-list">
-          <li><Link to="/" className="list-item">Europe</Link></li>
-          <li><Link to="/" className="list-item">America</Link></li>
-          <li><Link to="/" className="list-item">Africa</Link></li>
-          <li><Link to="/" className="list-item">Asia</Link></li>
-          <li><Link to="/" className="list-item">Oceania</Link></li>
+          <li className="list dk"><Link to="/" className="list-item">Europe</Link></li>
+          <li className="list dk"><Link to="/" className="list-item">America</Link></li>
+          <li className="list dk"><Link to="/" className="list-item">Africa</Link></li>
+          <li className="list dk"><Link to="/" className="list-item">Asia</Link></li>
+          <li className="list dk"><Link to="/" className="list-item">Oceania</Link></li>
         </ul>
       </div>
       

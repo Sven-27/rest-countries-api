@@ -11,6 +11,7 @@ const ThemeChanger = () => {
     }
   }, []);
 
+  const list = document.querySelectorAll("li")
   useEffect(() => {
     if (themeState) {
       localStorage.setItem('Theme', 'dark');
@@ -23,6 +24,10 @@ const ThemeChanger = () => {
       document.querySelector(".dropdown-header")?.classList.add("dark");
       document.querySelector(".dropdown-container")?.classList.add("dark");
 
+      for(let i = 0; i < list.length; i++) {
+        list[i]?.classList.add("dark");
+      }
+
     } else {
       localStorage.setItem('Theme', 'light');
       document.body.classList.remove('dark');
@@ -33,6 +38,10 @@ const ThemeChanger = () => {
       document.querySelector(".icon")?.classList.remove("dark");
       document.querySelector(".dropdown-header")?.classList.remove("dark");
       document.querySelector(".dropdown-container")?.classList.remove("dark");
+
+      for(let i = 0; i < list.length; i++) {
+        list[i]?.classList.remove("dark");
+      }
     }
   }, [themeState]);
 
