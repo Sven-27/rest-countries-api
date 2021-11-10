@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "styles/layout/ThemeChanger.scss"
+import "styles/layout/ThemeChanger.scss";
 
 const ThemeChanger = () => {
   const [themeState, setThemeState] = useState(false);
@@ -11,8 +11,8 @@ const ThemeChanger = () => {
     }
   }, []);
 
-  const list = document.querySelectorAll("li")
   useEffect(() => {
+    const list = document.querySelectorAll("li");
     if (themeState) {
       localStorage.setItem('Theme', 'dark');
       document.body.classList.add('dark');

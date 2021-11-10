@@ -39,10 +39,12 @@
     border: 1px solid $el-dk-blue;
     border-radius: 5px;
     background-color: $white;
+    color: $txt-dk-blue;
 
     &.dark {
       background-color: $el-dk-blue;
       border: 1px solid $bg-lt-gray;
+      color: $white;
     }
 
     @include mqpt($mob-ls) {
@@ -60,16 +62,18 @@
       &:not(:last-child) {
         border-bottom: 1px dotted $el-dk-blue;
 
-      }
-      &.dark {
-        border-bottom: 1px dotted $bg-lt-gray;
+        &.dark {
+          border-bottom: 1px dotted $bg-lt-gray;
+        }
       }
       
       &:hover {
         background-color: $el-dk-blue;
+        color: $white;
 
         &.dark {
-         background-color: $input-dk-gray;
+         background-color: $bg-lt-gray;
+         color: $txt-dk-blue;
        }
       }
     }
